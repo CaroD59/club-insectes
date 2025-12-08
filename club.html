@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insect Club Selector - J'AIME!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="club.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-8 flex justify-center items-start min-h-screen">
+    <div id="app" class="container mt-10">
+      <div class="card p-8 md:p-12">
+        <h1 class="title text-4xl md:text-5xl text-center mb-4">
+          🇫🇷 Club d'Insectes 🪲
+        </h1>
+        <p class="text-center text-gray-600 mb-8">
+          **Welcome !** Choose what you **LIKE (J'AIME)** to find your special
+          club !
+        </p>
+
+        <div
+          id="quiz-container"
+          class="custom-scroll max-h-[500px] overflow-y-auto pr-4"
+        >
+          <!-- Questions will be dynamically added here -->
+        </div>
+
+        <button
+          id="submit-btn"
+          onclick="determineClub()"
+          class="mt-8 w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full text-xl shadow-lg transition duration-300 transform hover:scale-[1.02] disabled:opacity-50"
+          disabled
+        >
+          Find My Club 🏆
+        </button>
+
+        <div id="result-display" class="hidden mt-8 result-box p-8 text-center">
+          <p class="text-3xl title mb-4">
+            🎉 Félicitations, little Beetle ! 🎉
+          </p>
+          <p class="text-xl mb-4">You have been chosen for :</p>
+          <h2 id="club-name" class="title text-5xl text-orange-700 mb-6"></h2>
+          <p id="club-description" class="text-lg text-gray-700"></p>
+          <button
+            onclick="resetQuiz()"
+            class="mt-6 text-sm text-lime-700 hover:text-lime-900 font-semibold"
+          >
+            Try again ? 🤔
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="club.js"></script>

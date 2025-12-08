@@ -1,0 +1,69 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ecfccb;
+}
+.container {
+  max-width: 800px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(60, 100, 40, 0.1);
+}
+.title {
+  font-family: "Comfortaa", cursive;
+  color: #4d7c0f;
+}
+.question-box {
+  background-color: #f7fee7;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.choice-btn {
+  /* Styles de base */
+  @apply px-4 py-3 rounded-full font-semibold transition duration-200 w-full text-left flex items-center justify-between;
+  border: 2px solid #bef264;
+  color: #4d7c0f; /* Couleur de texte non sélectionné */
+}
+.choice-btn:hover {
+  @apply bg-lime-100 transform scale-[1.02];
+}
+
+/* NOUVEAU STYLE POUR L'OPTION SÉLECTIONNÉE */
+.choice-btn.selected {
+  @apply bg-lime-500 border-lime-700 text-white shadow-xl ring-4 ring-lime-300 transform scale-[1.03];
+  font-weight: 800; /* Plus audacieux */
+  border-color: #4d7c0f;
+}
+
+.result-box {
+  background-color: #f0fdf4;
+  border: 4px solid #4d7c0f;
+  border-radius: 1rem;
+  animation: bounceIn 0.8s ease-out;
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Custom scrollbar for better look */
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #a3e635;
+  border-radius: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background-color: #f7fee7;
+}
