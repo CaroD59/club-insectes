@@ -53,21 +53,25 @@ const questions = [
 const clubs = {
   action: {
     name: "The ZOOM CLUB ! 🚀 (Le Club de la Vitesse)",
+    photo: "./img/zoom.png",
     description:
-      "You love running, jumping, and playing Tag ! Your friends are the Grasshoppers and the fast Bees. You will train on the 'La Marelle' and 'Jouer à Chat' circuits!",
+      "You love running, jumping, and playing Tag ! Your friends are the Grasshoppers and the fast Bees. You will train on the 'La Marelle' and 'Jouer à Chat' circuits !",
   },
   calm: {
     name: "The WISE BEETLE CLUB ! 🤓 (Le Club des Sages)",
+    photo: "./img/wise-beetle.png",
     description:
       "You like quiet activities like reading, organizing your marbles, and swinging gently. Your friends are the Caterpillars and the quiet Ladybugs. You will have a special library access !",
   },
   silly: {
     name: "The FUN CHAOS CLUB ! 🤪 (Le Club des Bêtises)", // Renamed to FUN CHAOS
+    photo: "./img/fun-chaos.png",
     description:
       "You love making noise, being funny, hiding in strange places, and playing with silly toys! Your friends are the funny Worms and the chaotic Moths. Your club motto is 'VIVRE SANS LES RÈGLES !'",
   },
   play: {
     name: "The TOY MASTER CLUB ! 👑 (Le Club des Jouets)",
+    photo: "./img/toy-master.png",
     description:
       "You are the master of recess games! You love marbles, Yo-Yo, and jump rope. Your friends need your help to organize the best games every day !",
   },
@@ -161,7 +165,7 @@ function determineClub() {
   document.getElementById("club-name").textContent = resultClub.name;
   document.getElementById("club-description").textContent =
     resultClub.description;
-
+  document.getElementById("club-img").src = resultClub.photo;
   document.getElementById("quiz-container").classList.add("hidden");
   document.getElementById("submit-btn").classList.add("hidden");
   document.getElementById("result-display").classList.remove("hidden");
