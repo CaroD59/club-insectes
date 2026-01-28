@@ -41,8 +41,8 @@ Pour que le quiz fonctionne, les fichiers doivent être organisés comme ceci :
 
 ## 🚀 Les 4 Clubs d'Insectes
 
-| Club              | Animal totem                                | Personnalité |
-| :---------------- | :------------------------------------------ | :----------- |
+| Club              | Personnalité                                |
+| :---------------- | :------------------------------------------ |
 | **ZOOM CLUB !**   | Pour ceux qui aiment courir et voler vite ! |
 | **WISE BEETLE !** | Pour ceux qui aiment lire et être calmes.   |
 | **FUN CHAOS !**   | Pour ceux qui aiment rigoler et se cacher.  |
